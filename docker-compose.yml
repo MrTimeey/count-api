@@ -3,6 +3,7 @@ version: '3'
 services:
 
   count-api:
+    container_name: count-api
     build:
       context: .
       dockerfile: Dockerfile

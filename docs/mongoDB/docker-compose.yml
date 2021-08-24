@@ -2,7 +2,8 @@ version: '3'
 
 services:
 
-  mongo-database:
+  count-mongo-database:
+    container_name: count-mongo
     image: bitnami/mongodb:4.2
     restart: always
     environment:
@@ -13,7 +14,7 @@ services:
     volumes:
       - "mongo-data:/data/db"
     ports:
-      - 27017:27017
+      - "8016:27017"
 
 volumes:
   mongo-data:

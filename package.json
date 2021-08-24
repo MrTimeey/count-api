@@ -1,0 +1,68 @@
+{
+  "name": "count-api",
+  "version": "0.1.0",
+  "description": "An API for counting things",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "nodemon server.js --exec",
+    "test": "mocha --recursive --exit --timeout 1000000",
+    "lint": "eslint --fix --ext .js,.jsx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrTimeey/count-api.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^5.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "mocha": "^8.3.2",
+    "mockgoose": "^8.0.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 5,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120
+  },
+  "keywords": [
+    "counting",
+    "count-api",
+    "api",
+    "nodejs",
+    "express",
+    "mongoose",
+    "swagger",
+    "openapi",
+    "sso",
+    "jwt"
+  ],
+  "author": {
+    "name": "MrTimeey",
+    "url": "https://github.com/MrTimeey"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrTimeey/count-api/issues"
+  },
+  "homepage": "https://github.com/MrTimeey/count-api#readme"
+}

@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "4081c698-e2e3-4247-935a-110a748e2e9b",
+		"name": "Count-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}{{port}}/api/health",
+					"host": [
+						"{{host}}{{port}}"
+					],
+					"path": [
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get on /api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}{{port}}/api",
+					"host": [
+						"{{host}}{{port}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

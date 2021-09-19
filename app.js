@@ -19,6 +19,8 @@ router.get('/', function(req, res) {
 });
 
 router.use('/health', require('./src/routers/healthcheck'));
+router.use('/user', require('./src/routers/user'));
+
 app.use('/api', router);
 
 module.exports = app;

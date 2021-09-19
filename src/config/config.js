@@ -12,5 +12,5 @@ module.exports = {
      port: process.env.PORT || 3000,
      environment: process.env.NODE_ENV || 'unknown',
      mongoUrl: mongoDbUrl,
-     apiKey: process.env.API_KEY,
+     jwtKey: process.env.JWT_KEY,
 };

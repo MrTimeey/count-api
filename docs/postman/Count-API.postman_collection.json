@@ -10,6 +10,18 @@
 			"item": [
 				{
 					"name": "Sign Up",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"user_id\", jsonData.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -51,14 +63,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}{{port}}/api/user/signup",
+							"raw": "{{host}}{{port}}/api/user/login",
 							"host": [
 								"{{host}}{{port}}"
 							],
 							"path": [
 								"api",
 								"user",
-								"signup"
+								"login"
 							]
 						}
 					},
